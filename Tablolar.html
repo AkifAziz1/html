@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar(cedveller)</title>
+</head>
+
+<body>
+
+    <table border="1" width="60%">
+<!--"thead" bashlig setri oldugunu bildirir-->
+        <thead>
+            <tr>
+                <!--table header(cedvel bashligi)-->
+                <th>Kurs adi</th>
+                <th>Saat</th>
+                <th>Ders ededi</th>
+            </tr>
+        </thead>
+        <!--"table row" setirler yaratmaq uchun istifade olunur -->
+
+        <tbody><!--"tbody" melumat hissesi oldugunu bildirir -->
+            <tr>
+                <!--"table data" table'in melumalarini ichinde saxlayir(sutun yaradir)-->
+                <td>Web yaratmaq</td>
+                <td>45</td>
+                <td>300</td>
+            </tr>
+
+            <tr>
+                <td>Sifirdan ileri seviyye</td>
+                <td>30</td>
+                <td rowspan="2">200</td><!--"rowspan" ise sutunu birleshdirir-->
+            </tr>
+
+            <tr>
+                <!--"colspan" keyword'u sozun nece sutun yer tutacagini gosterir(yeni setri birleshdirir)-->
+                <td colspan="2"> Sifirdan ileri seviyye </td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+
+</body>
+
+</html>

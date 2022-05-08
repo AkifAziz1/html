@@ -12,15 +12,20 @@
 
     <form>
         <p>
-            Ad: <input type="text">
+            <!--"placeholder" keywordu boshlugun ichine ne yazsag onu gosterir(istifadichiler bilgilendirme meqsedi ile)-->
+            Ad: <br><input type="text" name="ad" placeholder="Adinizi daxil edin" required> <!--required keyword'u input'u mecburi shekile getirir, yeni inputu bosh qoymaq mumkunsuzdur-->
         </p>
 
         <p>
-            Soyad: <input type="text">
+            Soyad: <br> <input type="text" name="soyad" placeholder="Soyadinizi daxil edin" required>
         </p>
 
         <p>
-            Meni Xatirla: <input type="checkbox">
+            e-poct: <br> <input type="email" name="email" placeholder="e-poct unvaninizi daxil edin" required>
+        </p>
+
+        <p>
+            Meni Xatirla: <input type="checkbox" name="meni xatirla">
         </p>
 
         <p>
@@ -31,9 +36,9 @@
         <p>
             Hobiler <br>
 
-            Film <input type="checkbox">
-            Idman <input type="checkbox">
-            Kitab Oxumaq <input type="checkbox">
+            Film <input type="checkbox" name="hobbi">
+            Idman <input type="checkbox" name="hobbi">
+            Kitab Oxumaq <input type="checkbox" name="hobbi">
             
         </p> 
 
@@ -45,8 +50,18 @@
                 <option>Salyan</option>
 
             </select> 
+
+            <select multiple> <!--Coxlu sechimler uchun-->
+                <option>Baki</o ption>
+                <option>Neftchala</option>
+                <option>Sheki</option>
+                <option>Salyan</option>
+
+            </select> 
             
         </p>
+
+        <input type="submit" value="Save">
 
 
     </form>
