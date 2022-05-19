@@ -6,18 +6,25 @@
 
     <title>CSS Dersleri</title>
 
-    
-    <style>
 
+    <style>
         /*"Class"-dan istifade zamani "."- den istifade edirik."ID"-den istifade etsek "#"-dan istifade edeceyik*/
         .bir {
             color: red;
             background-color: bisque;
+            text-align: left;
+            padding: 25px;
+            margin: 25px;
+            
+
         }
 
-        #iki{
+        #iki {
             color: brown;
             background-color: aqua;
+            text-align: right;
+            margin-right: 50px;
+
         }
 
         .uc {
@@ -25,13 +32,38 @@
             background-color: rgb(17, 17, 117);
             border-style: double;
             border-color: red;
-            padding: 25px; /*"padding" funksiaysi border ile yazi arasinda iche dogru boshlug goymag uchun istifade olunur*/
-            margin: 25px;  /*"margin" funksiaysi border etrafinda bayira dogru boshlug goymag uchun istifade olunur*/
+            padding: 25px;
+            /*"padding" funksiaysi border ile yazi arasinda iche dogru boshlug goymag uchun istifade olunur*/
+            margin: 25px;
+            /*"margin" funksiaysi border etrafinda bayira dogru boshlug goymag uchun istifade olunur*/
             margin-left: 100px;
-            text-align: center; /*"text-align`" funksiaysi border etrafinda bayira dogru boshlug goymag uchun istifade olunur*/
-            
+            text-align: center;
+            /*"text-align`" funksiaysi border etrafinda bayira dogru boshlug goymag uchun istifade olunur*/
 
         }
+
+        #yer{
+            padding: 20px;
+            border: 2px solid black;
+            width: 50%;
+        }
+
+        h1{
+            border-radius: 20px; /*"radius" keyword'u eyrilik vermek uchun istifade olunur*/
+        }
+
+img{
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+
+.butonumuz{
+    
+}
+
 
 
 
@@ -41,13 +73,19 @@
 
 <body>
 
-    <h1 class="bir" id="bir">Salam, CSS derslerine xosh gelmisiz</h1>
-    <h1 class="iki" id="iki">Salam, CSS derslerine xosh gelmisiz</h1>
-    <h1 class="uc" id="uc">Salam, CSS derslerine xosh gelmisiz</h1>
-    <h1 class="dord" id="dord">Salam, CSS derslerine xosh gelmisiz</h1>
+    <button class="butonumuz" type="button">click</button>
+
+    <div id="yer">
+        <h1 class="bir" id="bir">Salam, CSS derslerine xosh gelmisiz</h1>
+        <h1 class="iki" id="iki">Salam, CSS derslerine xosh gelmisiz</h1>
+        <h1 class="uc" id="uc">Salam, CSS derslerine xosh gelmisiz</h1>
+        <h1 class="dord" id="dord">Salam, CSS derslerine xosh gelmisiz</h1>
+    </div>
 
 
     <hr>
+
+    <img src="img/Shukru.jpg" alt="">
 
 </body>
 
